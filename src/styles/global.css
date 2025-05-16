@@ -36,20 +36,21 @@
 	button {
 		@apply cursor-pointer;
 	}
+	h1 {
+		@apply text-4xl lg:text-5xl;
+		font-family: var(--font-heading-1);
+	}
+	h2 {
+		@apply text-2xl leading-tight tracking-wide uppercase lg:text-3xl md:leading-tight;
+		font-family: var(--font-heading-1);
+	}
+	h3 {
+		@apply text-lg leading-tight font-medium tracking-widest uppercase md:text-2xl md:leading-tight;
+		font-family: var(--font-heading-2);
+	}
 }
 
 @layer components {
-	.h1 {
-		@apply font-heading-1 text-4xl font-semibold lg:text-5xl;
-	}
-
-	.h2 {
-		@apply font-heading-1 text-2xl leading-tight tracking-wide uppercase md:text-[2.5rem] md:leading-tight;
-	}
-
-	.h3 {
-		@apply font-heading-2 text-lg leading-tight font-medium tracking-widest uppercase md:text-2xl md:leading-tight;
-	}
 
 	.description {
 		@apply text-base-700;
@@ -91,7 +92,7 @@
 	@apply translate-y-4 opacity-0 transition-all duration-1000;
   }
   
-  .scroll-animation .col.scroll-animated {
+.scroll-animation .col.scroll-animated {
 	@apply translate-y-0 opacity-100;
   }
 
@@ -99,4 +100,12 @@
 .scroll-animation .col:nth-child(2) { @apply delay-200; }
 .scroll-animation .col:nth-child(3) { @apply delay-300; }
 
-  
+.bg-hero-gradient {
+	background: linear-gradient(to right, #F3F3F3 21%, #BABABA 100%);
+
+}
+
+.bg-gradient-dark {
+	background: linear-gradient(to right, #111111 31%, #666666 100%);
+
+}

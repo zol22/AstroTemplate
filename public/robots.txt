@@ -1,1 +1,1 @@
-Sitemap: https://solunasites.com/sitemap-index.xml
+Sitemap: https://websitename.com/sitemap-index.xml
